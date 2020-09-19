@@ -1,0 +1,42 @@
+{
+    "name": "fruitware/whmcs_acronis_sync",
+    "description": "Allows to synchronise Acronis Cyber Platform data and WHMCS management tools",
+    "keywords": [
+        "fruitware",
+        "whmcs_acronis_sync"
+    ],
+    "homepage": "https://github.com/fruitware/whmcs_acronis_sync",
+    "license": "LGPL-3.0-or-later",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sergey Beresnev",
+            "email": "keriat@me.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fruitware\\WhmcsAcronisSync\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fruitware\\WhmcsAcronisSync\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
